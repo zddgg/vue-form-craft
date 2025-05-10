@@ -6,6 +6,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "shiki": "^1.21.0"
+    "shiki": "^1.29.2"
   }
 }

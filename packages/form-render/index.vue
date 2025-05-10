@@ -1,7 +1,8 @@
 <template>
-  <el-form
+  <n-form
     :model="formValues"
-    :label-position="schema.labelAlign"
+    :label-align="schema.labelAlign"
+    :label-placement="schema.labelPlacement"
     :size="schema.size"
     :disabled="schema.disabled"
     :hide-required-asterisk="schema.hideRequiredAsterisk"
@@ -13,7 +14,7 @@
 
     <FormItemGroup :list="formItems" :empty-text="locale.canvas.emptyTip" :empty-size="18" />
     <Footer />
-  </el-form>
+  </n-form>
 </template>
 
 <script setup lang="ts">
@@ -47,10 +48,7 @@ const formValues = defineModel<Record<string, any>>({ default: reactive({}) })
 
 const schema = defineModel<FormSchema>('schema', {
   default: reactive({
-    labelWidth: 150,
-    labelAlign: 'right',
     scrollToError: true,
-    size: 'default',
     items: []
   })
 })

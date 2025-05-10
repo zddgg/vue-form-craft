@@ -10,11 +10,9 @@ export default {
   type: 'layout',
   order: 1,
   attrSchema: {
-    size: 'small',
-    labelAlign: 'top',
     items: [
       { label: '唯一标识', component: 'Input', name: 'name' },
-      { label: '卡片标题', component: 'Input', name: 'props.header', initialValue: '卡片' }
+      { label: '卡片标题', component: 'Input', name: 'props.title', initialValue: '卡片' }
     ]
   }
 } satisfies FormElement

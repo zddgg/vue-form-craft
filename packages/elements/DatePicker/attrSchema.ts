@@ -1,8 +1,6 @@
 import type { FormSchema } from "@vue-form-craft/types";
 
 export default {
-  size: 'small',
-  labelAlign: 'top',
   initialValues: {
     label: '日期选择器',
     props: {
@@ -50,11 +48,17 @@ export default {
       props: {
         mode: 'static',
         options: [
-          { label: '日期时间', value: 'datetime' },
           { label: '日期', value: 'date' },
-          { label: '年月', value: 'month' },
+          { label: '日期时间', value: 'datetime' },
           { label: '日期范围', value: 'daterange' },
-          { label: '日期时间范围', value: 'datetimerange' }
+          { label: '日期时间范围', value: 'datetimerange' },
+          { label: '年月', value: 'month' },
+          { label: '年', value: 'year' },
+          { label: '季度', value: 'quarter' },
+          { label: '月范围', value: 'monthrange' },
+          { label: '季度范围', value: 'quarterrange' },
+          { label: '年范围', value: 'yearrange' },
+          { label: '周', value: 'week' }
         ]
       }
     },

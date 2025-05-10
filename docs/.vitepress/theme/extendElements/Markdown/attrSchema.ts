@@ -1,8 +1,6 @@
 import type { FormSchema } from 'vue-form-craft'
 
 export default {
-  size: 'small',
-  labelAlign: 'top',
   initialValues: { label: 'markdown编辑器' },
   items: [
     { label: '标签', component: 'Input', name: 'label' },

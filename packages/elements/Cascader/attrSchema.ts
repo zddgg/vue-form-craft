@@ -1,8 +1,6 @@
 import type { FormSchema } from '@vue-form-craft/types'
 
 export default {
-  size: 'small',
-  labelAlign: 'top',
   initialValues: {
     label: '级联选择器',
     props: {
@@ -23,7 +21,7 @@ export default {
             },
             {
               label: '选项1-3',
-              value: 'value1-2'
+              value: 'value1-3'
             }
           ]
         },
@@ -41,7 +39,21 @@ export default {
             },
             {
               label: '选项2-3',
-              value: 'value2-2'
+              value: 'value2-3',
+              children: [
+                {
+                  label: '选项2-3-1',
+                  value: 'value2-3-1'
+                },
+                {
+                  label: '选项2-3-2',
+                  value: 'value2-3-2'
+                },
+                {
+                  label: '选项2-3-3',
+                  value: 'value2-3-3'
+                }
+              ]
             }
           ]
         },
@@ -95,11 +107,10 @@ export default {
       },
       designKey: 'form-eTxc'
     },
-
     {
       label: '显示每一级',
       component: 'Switch',
-      name: 'props.showAllLevels',
+      name: 'props.showPath',
       initialValue: true
     },
 

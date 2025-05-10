@@ -61,7 +61,7 @@ const attrSchema = computed<FormSchema>(() => {
     }
   }
 
-  return { size: 'small', labelAlign: 'top', items: [] } satisfies FormSchema
+  return { items: [] } satisfies FormSchema
 })
 
 const currentProps = computed({

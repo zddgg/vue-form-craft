@@ -1,9 +1,6 @@
 import type { FormSchema } from "@vue-form-craft/types";
 
 export default {
-  labelWidth: 150,
-  labelAlign: 'right',
-  size: 'default',
   items: [
     {
       label: '选择商品',

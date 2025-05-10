@@ -1,8 +1,6 @@
 import type { FormSchema } from '@vue-form-craft/types'
 
 export default {
-  size: 'small',
-  labelAlign: 'top',
   items: [
     { label: '标签', component: 'Input', name: 'label',initialValue:'JSON编辑器' },
     {

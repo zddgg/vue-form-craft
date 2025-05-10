@@ -1,21 +1,23 @@
 <template>
-  <el-dialog
-    v-model="visible"
-    :title="locale.actions.previewVueCode"
-    width="70%"
-    center
-    destroy-on-close
-    top="10vh"
-  >
-    <el-tabs model-value="ts" class="demo-tabs">
-      <el-tab-pane label="Typescript" name="ts">
-        <CodeHighLight style="height: 70vh" :code="tsVue(designInstance.schema)" language="vue" />
-      </el-tab-pane>
-      <el-tab-pane label="Javascript" name="js">
-        <CodeHighLight style="height: 70vh" :code="jsVue(designInstance.schema)" language="vue" />
-      </el-tab-pane>
-    </el-tabs>
-  </el-dialog>
+  <n-modal v-model:show="visible">
+    <n-card
+      style="width: 70%; margin-top: 10vh"
+      :title="locale.actions.previewVueCode"
+      :bordered="false"
+      :closable="true"
+      :header-style="{ textAlign: 'center', paddingTop: '16px', paddingBottom: '16px' }"
+      @close="visible = false"
+    >
+      <n-tabs default-value="ts" type="line" animated>
+        <n-tab-pane tab="Typescript" name="ts">
+          <CodeHighLight style="height: 70vh" :code="tsVue(designInstance.schema)" language="vue" />
+        </n-tab-pane>
+        <n-tab-pane tab="Javascript" name="js">
+          <CodeHighLight style="height: 70vh" :code="jsVue(designInstance.schema)" language="vue" />
+        </n-tab-pane>
+      </n-tabs>
+    </n-card>
+  </n-modal>
 </template>
 
 <script setup lang="ts">

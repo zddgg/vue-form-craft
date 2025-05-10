@@ -10,8 +10,6 @@ export default {
   type: 'basic',
   order: 12,
   attrSchema: {
-    size: 'small',
-    labelAlign: 'top',
     initialValues: { label: '滑块' },
     items: [
       { label: '标签', component: 'Input', name: 'label' },

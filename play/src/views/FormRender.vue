@@ -24,9 +24,6 @@ const formValues = ref({
 })
 
 const schema = {
-  labelWidth: 150,
-  labelAlign: 'right',
-  size: 'default',
   scrollToError: true,
   items: [
     {

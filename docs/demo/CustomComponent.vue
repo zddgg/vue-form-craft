@@ -12,9 +12,6 @@ const formRef = ref<FormInstance>()
 const formValues = ref({})
 
 const schema: FormSchema = {
-  size: 'default',
-  labelAlign: 'right',
-  labelWidth: 150,
   items: [
     {
       label: '验证码',

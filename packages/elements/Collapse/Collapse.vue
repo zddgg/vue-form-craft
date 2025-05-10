@@ -1,13 +1,13 @@
 <template>
-  <ElCollapse v-bind="$attrs" v-model="activeKey">
-    <ElCollapseItem v-for="item in children" :key="item.name" :name="item.name">
-      <template #title>
+  <n-collapse v-bind="$attrs" v-model:expanded-names="activeKey">
+    <n-collapse-item v-for="item in children" :key="item.name" :name="item.name">
+      <template #header>
         <Title :title="item.title" italic type="h4" />
       </template>
 
       <FormItemGroup :list="item.children!" />
-    </ElCollapseItem>
-  </ElCollapse>
+    </n-collapse-item>
+  </n-collapse>
 </template>
 
 <script setup lang="ts">

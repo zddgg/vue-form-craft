@@ -89,8 +89,6 @@ Drag and drop through the designer to create a form that exports JsonSchema
 import type { FormSchema } from 'vue-form-craft'
 
 export default {
-  size: 'small',
-  labelAlign: 'top',
   items: [
     { label: '标签', component: 'Input', name: 'label' },
     {

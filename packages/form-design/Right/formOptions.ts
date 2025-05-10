@@ -1,8 +1,6 @@
 import type { FormSchema } from '@vue-form-craft/types'
 
 export default {
-  size: 'small',
-  labelAlign: 'top',
   items: [
     {
       label: 'label宽度',
@@ -23,11 +21,23 @@ export default {
         mode: 'static',
         options: [
           { label: '左对齐', value: 'left' },
-          { label: '居上', value: 'top' },
           { label: '右对齐', value: 'right' }
         ]
       },
-      initialValue: 'right'
+      initialValue: 'left'
+    },
+    {
+      label: 'label显示位置',
+      component: 'Radio',
+      name: 'labelPlacement',
+      props: {
+        mode: 'static',
+        options: [
+          { label: '左置', value: 'left' },
+          { label: '上置', value: 'top' }
+        ]
+      },
+      initialValue: 'top'
     },
     {
       label: 'label后缀',
@@ -43,10 +53,11 @@ export default {
         options: [
           { label: '默认', value: 'default' },
           { label: '较小', value: 'small' },
+          { label: '中等', value: 'medium' },
           { label: '较大', value: 'large' }
         ]
       },
-      initialValue: 'default'
+      initialValue: 'medium'
     },
     {
       label: '禁用整个表单',

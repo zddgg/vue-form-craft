@@ -10,8 +10,6 @@ export default {
   type: 'assist',
   order: 4,
   attrSchema: {
-    size: 'small',
-    labelAlign: 'top',
     initialValues: {
       props: {
         text: 'Tag',

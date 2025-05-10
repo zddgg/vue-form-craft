@@ -69,8 +69,6 @@ const formInstance = useFormInstance()
 const value = defineModel<string>()
 
 const actionSchema: FormSchema = {
-  size: 'small',
-  labelAlign: 'right',
   items: [
     {
       component: 'Inline',

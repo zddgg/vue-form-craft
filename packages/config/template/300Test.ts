@@ -1,9 +1,6 @@
 import type { FormSchema } from "@vue-form-craft/types";
 
 export default {
-  labelWidth: 150,
-  labelAlign: 'right',
-  size: 'default',
   items: Array.from({ length: 300 }).map((_, index) => ({
     label: `字段${index + 1}`,
     component: 'Input',

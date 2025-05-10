@@ -10,8 +10,6 @@ export default {
   type: 'assist',
   order: 3,
   attrSchema: {
-    size: 'small',
-    labelAlign: 'top',
     initialValues: {
       props: {
         title: '标题',

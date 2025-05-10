@@ -1,8 +1,6 @@
 import type { FormSchema } from '@vue-form-craft/types'
 
 export default {
-  size: 'small',
-  labelAlign: 'top',
   items: [
     { label: '唯一标识', component: 'Input', name: 'name' },
     { label: '隐藏字段', component: 'Switch', name: 'hidden' },
@@ -23,26 +21,26 @@ export default {
       props: {
         mode: 'static',
         options: [
-          { label: '成功', value: 'success' },
+          { label: '默认', value: 'default' },
           { label: '信息', value: 'info' },
+          { label: '成功', value: 'success' },
           { label: '警告', value: 'warning' },
           { label: '错误', value: 'error' }
         ]
       },
-      initialValue: 'info'
+      initialValue: 'default'
     },
     {
-      label: '主题',
-      component: 'Radio',
-      name: 'props.effect',
-      props: {
-        mode: 'static',
-        options: [
-          { label: '浅色', value: 'light' },
-          { label: '深色', value: 'dark' }
-        ]
-      },
-      initialValue: 'light'
+      label: '是否显示边框',
+      component: 'Switch',
+      name: 'props.bordered',
+      initialValue: true
+    },
+    {
+      label: '跑马灯效果',
+      component: 'Switch',
+      name: 'props.marquee',
+      initialValue: false
     }
   ]
 } satisfies FormSchema

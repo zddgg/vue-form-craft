@@ -37,9 +37,10 @@ export interface FormItemType {
 
 export type FormSchema = {
   labelWidth?: number
-  labelAlign?: 'top' | 'left' | 'right'
+  labelAlign?: 'left' | 'right'
+  labelPlacement?: 'left' | 'top'
   labelSuffix?: string
-  size?: 'default' | 'small' | 'large'
+  size?: 'default' | 'small' | 'medium' | 'large'
   disabled?: boolean
   hideRequiredAsterisk?: boolean
   labelBold?: boolean
@@ -78,6 +79,7 @@ export type Direction = 'horizontal' | 'vertical'
 export interface SelectProps {
   options?: Record<string, any>[]
   multiple?: boolean
+  checkStrategy?: 'all' | 'child' | 'parent';
   mode?: string
   labelKey?: string
   valueKey?: string

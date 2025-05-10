@@ -10,8 +10,6 @@ export default {
   type: 'layout',
   order: 4,
   attrSchema: {
-    size: 'small',
-    labelAlign: 'top',
     initialValues: {
       children: [
         { label: '选项卡1', name: 'name1', children: [] },

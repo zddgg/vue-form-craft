@@ -12,9 +12,6 @@ const formRef = ref<FormInstance>()
 const formValues = ref({})
 
 const schema: FormSchema = {
-  labelWidth: 150,
-  labelAlign: 'right',
-  size: 'default',
   items: [
     {
       label: '批量设置密码',

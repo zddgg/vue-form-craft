@@ -1,15 +1,15 @@
 <template>
-  <el-cascader
-    v-model="value"
+  <n-cascader
+    v-model:value="value"
+    clearable
+    :multiple="multiple"
+    check-strategy="child"
     :options="currentOptions"
     :loading="loading"
-    :props="{
-      multiple,
-      label: labelKey,
-      value: valueKey
-    }"
+    :label-field="labelKey"
+    :value-field="valueKey"
     v-bind="$attrs"
-    @change="selectChange"
+    @update:value="selectChange"
   />
 </template>
 

@@ -4,12 +4,12 @@
       <component :is="config.render" v-bind="formItemProps" />
     </div>
 
-    <el-form-item
+    <n-form-item
       v-else
       :class="[ns('form-item'), thisProps.class, `${component}-${name}`]"
       :style="style"
       :key="name"
-      :prop="name"
+      :path="name"
       :label-width="hideLabel ? '0' : formInstance.schema.labelWidth"
       :rules="computeRules"
     >
@@ -56,7 +56,7 @@
         v-bind="formItemProps"
         v-model:[config.modelName!]="value"
       />
-    </el-form-item>
+    </n-form-item>
   </template>
 </template>
 

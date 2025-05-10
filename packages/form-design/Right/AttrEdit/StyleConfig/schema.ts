@@ -1,9 +1,6 @@
 import type { FormSchema } from '@vue-form-craft/types'
 
 const schema: FormSchema = {
-  labelWidth: 60,
-  labelAlign: 'top',
-  size: 'small',
   items: [
     {
       label: 'ID',

@@ -1,8 +1,6 @@
 import type { FormSchema } from 'vue-form-craft'
 
 export default {
-  size: 'small',
-  labelAlign: 'top',
   initialValues: {
     label: '单行文本',
     component: 'AInput',

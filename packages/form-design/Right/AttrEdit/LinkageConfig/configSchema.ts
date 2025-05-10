@@ -93,8 +93,6 @@ export const quickSchema = (schema: FormSchema) => {
   // console.log(conditionOptions)
 
   return {
-    labelWidth: 100,
-    labelAlign: 'top',
     items: [
       {
         label: '快速配置',
@@ -242,8 +240,6 @@ export const quickSchema = (schema: FormSchema) => {
 }
 
 export const editSchema = {
-  labelWidth: 100,
-  labelAlign: 'top',
   items: [
     {
       label: '手动配置',

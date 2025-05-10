@@ -1,4 +1,4 @@
-import { h } from 'vue'
+import { defineAsyncComponent, h } from 'vue'
 import Icon from '@vue-form-craft/icons'
 import type { FormElement } from '@vue-form-craft/types'
 import attrSchema from './attrSchema'
@@ -6,7 +6,7 @@ import attrSchema from './attrSchema'
 export default {
   title: '颜色选择器',
   component: 'ColorPicker',
-  render: 'ElColorPicker',
+  render: defineAsyncComponent(() => import('./ColorPicker.vue')),
   icon: h(Icon, { name: 'colorPicker' }),
   type: 'basic',
   order: 9,

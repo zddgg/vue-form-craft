@@ -11,8 +11,6 @@ export default {
   order: 3,
   lbTitle: true,
   attrSchema: {
-    size: 'small',
-    labelAlign: 'top',
     initialValues: {
       props: {
         columns: 2,

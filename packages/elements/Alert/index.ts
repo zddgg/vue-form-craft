@@ -1,4 +1,4 @@
-import { h } from 'vue'
+import { defineAsyncComponent, h } from 'vue'
 import Icon from '@vue-form-craft/icons'
 import attrSchema from './attrSchema'
 import type { FormElement } from '@vue-form-craft/types'
@@ -10,5 +10,5 @@ export default {
   type: 'assist',
   order: 2,
   attrSchema,
-  render: 'ElAlert'
+  render: defineAsyncComponent(() => import('./Alert.vue'))
 } satisfies FormElement

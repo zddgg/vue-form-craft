@@ -14,3 +14,7 @@ $namespace: 'vfc';
 
 @import './form-design/index.scss';
 @import './components/index.scss';
+
+* {
+  box-sizing: border-box;
+}

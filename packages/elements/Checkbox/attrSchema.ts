@@ -2,8 +2,6 @@ import optionConfig from '@vue-form-craft/config/optionConfig'
 import type { FormSchema } from '@vue-form-craft/types'
 
 export default {
-  size: 'small',
-  labelAlign: 'top',
   initialValues: {
     label: '多选框组',
     component: 'Checkbox',
@@ -63,37 +61,6 @@ export default {
       designKey: 'form-R003',
       name: 'cNmCuu',
 
-    },
-
-    {
-      label: '选项样式类型',
-      component: 'Radio',
-      name: 'props.optionType',
-      props: {
-        mode: 'static',
-        options: [
-          { label: '无边框', value: 'circle' },
-          { label: '边框', value: 'border' },
-          { label: '按钮', value: 'button' }
-        ]
-      }
-    },
-    {
-      label: '选项排列方向',
-      component: 'Radio',
-      name: 'props.direction',
-      props: {
-        mode: 'static',
-        options: [
-          { label: '水平排列', value: 'horizontal' },
-          { label: '垂直排列', value: 'vertical' }
-        ]
-      }
-    },
-    {
-      label: '选项间距（px）',
-      component: 'InputNumber',
-      name: 'props.space'
     },
 
     ...optionConfig

@@ -1,8 +1,6 @@
 import type { FormSchema } from "@vue-form-craft/types";
 
 export default {
-  size: 'small',
-  labelAlign: 'top',
   initialValues: {
     label: '颜色选择器',
     component: 'ColorPicker'

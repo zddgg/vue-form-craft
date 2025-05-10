@@ -4,8 +4,6 @@ import type { FormSchema } from '@vue-form-craft/types'
   // const targetOptions = build(schema.items).filter((item) => item.value !== current.name)
 
   return {
-    labelWidth: 100,
-    labelAlign: 'top',
     items: [
       {
         // label: '值联动',

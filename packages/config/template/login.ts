@@ -1,9 +1,6 @@
 import type { FormSchema } from '@vue-form-craft/types'
 
 export default {
-  labelWidth: 150,
-  labelAlign: 'right',
-  size: 'default',
   scrollToError: true,
   items: [
     {

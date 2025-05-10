@@ -11,15 +11,16 @@
     <div v-else>{{ currentOptions.find((item) => item[valueKey] === value)?.[labelKey] }}</div>
   </div>
 
-  <el-select
-    v-model="value"
+  <n-select
+    v-model:value="value"
     v-bind="$attrs"
-    @change="selectChange"
+    @update:value="selectChange"
     :multiple="multiple"
     clearable
     filterable
     v-loading="loading"
     v-else
+    :options="currentOptions"
   >
     <el-option
       v-for="item in currentOptions"
@@ -30,7 +31,7 @@
     >
       {{ item[labelKey] }}
     </el-option>
-  </el-select>
+  </n-select>
 </template>
 
 <script setup lang="ts">

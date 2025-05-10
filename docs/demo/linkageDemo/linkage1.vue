@@ -4,9 +4,6 @@
 
 <script setup lang="ts">
 const schema = {
-  labelWidth: 150,
-  labelAlign: 'right',
-  size: 'default',
   items: [
     {
       label: '评分',

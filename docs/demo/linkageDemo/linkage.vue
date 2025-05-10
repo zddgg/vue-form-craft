@@ -9,9 +9,6 @@ import type { FormSchema } from 'vue-form-craft'
 const formValues = ref({})
 
 const schema: FormSchema = {
-  labelWidth: 100,
-  labelAlign: 'right',
-  size: 'default',
   items: [
     {
       label: '姓名',
