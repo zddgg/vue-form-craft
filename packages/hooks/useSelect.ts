@@ -4,6 +4,7 @@ import { getDataByPath } from '@vue-form-craft/utils'
 import type { SelectProps } from '@vue-form-craft/types'
 import useFormInstance from './useFormInstance'
 import useRequest from './useRequest'
+import { loadData } from '../utils/dataLoad'
 
 type Option = Record<string, any>
 
@@ -25,6 +26,13 @@ const useSelect = (props: SelectProps) => {
     loading.value = true
 
     try {
+      const { isBreak, data } = await loadData(url, params)
+      
+      if (isBreak) {
+        currentOptions.value = data || []
+        return
+      }
+      
       const res = await request({
         url,
         method,

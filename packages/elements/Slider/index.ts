@@ -44,7 +44,8 @@ export default {
       { label: '初始值', component: 'InputNumber', name: 'initialValue' },
       { label: '开启选择范围', component: 'Switch', name: 'props.range' },
       { label: '步长', component: 'InputNumber', name: 'props.step', initialValue: 1 },
-      { label: '最小值', component: 'InputNumber', name: 'props.min', initialValue: 0 }
+      { label: '最小值', component: 'InputNumber', name: 'props.min', initialValue: 0 },
+      { label: '最大值', component: 'InputNumber', name: 'props.max', initialValue: 100 }
     ]
   }
 } satisfies FormElement
