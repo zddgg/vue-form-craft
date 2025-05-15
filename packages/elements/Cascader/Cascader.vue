@@ -9,6 +9,7 @@
       value: valueKey
     }"
     v-bind="$attrs"
+    style="width: 100%"
     @change="selectChange"
   />
 </template>
