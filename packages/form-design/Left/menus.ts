@@ -34,6 +34,10 @@ export default ({ elements, lang, omits }: Params) => {
       children: getChildren('high')
     },
     {
+      title: '业务组件',
+      children: getChildren('business')
+    },
+    {
       title: locale.menus.layoutTitle,
       children: getChildren('layout')
     },

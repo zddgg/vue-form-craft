@@ -53,7 +53,7 @@ export type FormElement = {
   component: string
   render: string | VNode | Component
   icon: string | VNode | Component
-  type: 'assist' | 'layout' | 'basic' | 'high'
+  type: 'assist' | 'layout' | 'basic' | 'high' | 'business'
   order: number
   // initialValues: Omit<FormItemType, 'name'>
   modelName?: string
