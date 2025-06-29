@@ -16,7 +16,7 @@ const props = defineProps<{
 
 const gridStyle = computed(() => ({
   display: 'grid',
-  'grid-template-columns': `repeat(${props.columns}, 1fr)`,
+  'grid-template-columns': `repeat(${props.columns}, minmax(0, 1fr))`,
   'row-gap': props.rowGap + 'px',
   'column-gap': props.columnGap + 'px'
 }))
