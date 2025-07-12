@@ -12,6 +12,7 @@
     :before-remove="beforeRemove"
     :on-exceed="handleExceed"
     :auto-upload="false"
+    :accept="accept?.join(', ')"
     @change="handleChange"
     style="width: 100%;"
   >
@@ -52,6 +53,7 @@ interface Props {
   drag?: boolean
   name?: string
   listType?: 'text' | 'picture-card'
+  accept?: string[]
 }
 
 const props = withDefaults(defineProps<Props>(), {

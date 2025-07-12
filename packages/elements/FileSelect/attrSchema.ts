@@ -65,6 +65,21 @@ export default {
           { label: '图片墙', value: 'picture-card' }
         ]
       }
-    }
+    },
+    {
+      label: '接受上传的文件类型',
+      component: 'Select',
+      name: 'props.accept',
+      props: {
+        mode: 'static',
+        options: [
+          { label: '.ckpt', value: '.ckpt' },
+          { label: '.pth', value: '.pth' },
+        ],
+        placeholder: '请选择...',
+        multiple: true,
+        allowCreate: true,
+      },
+    },
   ]
 } satisfies FormSchema

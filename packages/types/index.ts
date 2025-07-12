@@ -78,6 +78,7 @@ export type Direction = 'horizontal' | 'vertical'
 export interface SelectProps {
   options?: Record<string, any>[]
   multiple?: boolean
+  allowCreate?: boolean
   mode?: string
   labelKey?: string
   valueKey?: string

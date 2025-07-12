@@ -16,6 +16,7 @@
     v-bind="$attrs"
     @change="selectChange"
     :multiple="multiple"
+    :allow-create="allowCreate"
     clearable
     filterable
     v-loading="loading"
